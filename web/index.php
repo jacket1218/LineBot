@@ -33,7 +33,8 @@ foreach ($client->parseEvents() as $event) {
                 	$m_message = $message['text'];
                 	if($m_message=='抽卡')
                 	{
-                        $img_idx=rand(0,2);
+                        $img_idx = rand(0,2);
+                        $img_idx = 2;
                         switch(img_idx){
                             //image 1    
                             case 0:
