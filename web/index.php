@@ -37,8 +37,8 @@ foreach ($client->parseEvents() as $event) {
                         'replyToken' => $event['replyToken'],
                         'messages' => array(
                             array(
-                                'type' => 'text',
-                                'text' => '測試'
+                                'type' => 'image',
+                                'originalContentUrl' => 'https://drive.google.com/open?id=1SN_OLntzbR8SwpUwoErytuSnQZj-81bz', // 回復圖片
                             )
                         )
                     	));
