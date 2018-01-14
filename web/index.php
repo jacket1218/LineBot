@@ -43,8 +43,8 @@ foreach ($client->parseEvents() as $event) {
                                 'messages' => array(
                                     array(
                                         'type' => 'image',
-                                        'originalContentUrl' => 'https://i.imgur.com/FS9aV5g.jpg',
-                                        'previewImageUrl' => 'https://i.imgur.com/FS9aV5g.jpg'
+                                        'originalContentUrl' => 'https://i.imgur.com/oo23A7r.jpg',
+                                        'previewImageUrl' => 'https://i.imgur.com/oo23A7r.jpg'
                                     )
                                 )
                                 ));                               
