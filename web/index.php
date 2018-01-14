@@ -38,7 +38,8 @@ foreach ($client->parseEvents() as $event) {
                         'messages' => array(
                             array(
                                 'type' => 'image',
-                                'originalContentUrl' => 'https://drive.google.com/open?id=1SN_OLntzbR8SwpUwoErytuSnQZj-81bz', // 回復圖片
+                                'originalContentUrl' => 'https://i.imgur.com/FS9aV5g.jpg', // 回復圖片
+                                'previewImageUrl' => 'https://i.imgur.com/FS9aV5g.jpg' // 回復的預覽圖片
                             )
                         )
                     	));
