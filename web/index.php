@@ -31,18 +31,56 @@ foreach ($client->parseEvents() as $event) {
             switch ($message['type']) {
                 case 'text':
                 	$m_message = $message['text'];
-                	if($m_message=='卡')
+                	if($m_message=='抽卡')
                 	{
-                		$client->replyMessage(array(
-                        'replyToken' => $event['replyToken'],
-                        'messages' => array(
-                            array(
-                                'type' => 'image',
-                                'originalContentUrl' => 'https://i.imgur.com/FS9aV5g.jpg', // 回復圖片
-                                'previewImageUrl' => 'https://i.imgur.com/FS9aV5g.jpg' // 回復的預覽圖片
-                            )
-                        )
-                    	));
+                        $img_idx=rand(0,2);
+                        switch(img_idx){
+                            //image 1    
+                            case 0:
+                                $client->replyMessage(array(
+                                'replyToken' => $event['replyToken'],
+                                'messages' => array(
+                                    array(
+                                        'type' => 'image',
+                                        'originalContentUrl' => 'https://i.imgur.com/FS9aV5g.jpg',
+                                        'previewImageUrl' => 'https://i.imgur.com/FS9aV5g.jpg'
+                                    )
+                                )
+                                ));                               
+                                break;                               
+                               
+                            //image 1    
+                            case 1: 
+                                $client->replyMessage(array(
+                                'replyToken' => $event['replyToken'],
+                                'messages' => array(
+                                    array(
+                                        'type' => 'image',
+                                        'originalContentUrl' => 'https://i.imgur.com/oo23A7r.jpg',
+                                        'previewImageUrl' => 'https://i.imgur.com/oo23A7r.jpg'
+                                    )
+                                )
+                                ));                               
+                                break;                                
+                                
+                             
+                            //image 1    
+                            case 2: 
+                                $client->replyMessage(array(
+                                'replyToken' => $event['replyToken'],
+                                'messages' => array(
+                                    array(
+                                        'type' => 'image',
+                                        'originalContentUrl' => 'https://i.imgur.com/BZ47MW2.png',
+                                        'previewImageUrl' => 'https://i.imgur.com/BZ47MW2.png'
+                                    )
+                                )
+                                ));                               
+                                break;                                     
+                                
+                                
+                        }
+
                 	}
                     break;
                 
