@@ -34,8 +34,7 @@ foreach ($client->parseEvents() as $event) {
                 	if($m_message=='抽卡')
                 	{
                         $img_idx = rand(0,2);
-                        $img_idx = 2;
-                        switch(img_idx){
+                        switch($img_idx){
                             //image 1    
                             case 0:
                                 $client->replyMessage(array(
@@ -43,8 +42,8 @@ foreach ($client->parseEvents() as $event) {
                                 'messages' => array(
                                     array(
                                         'type' => 'image',
-                                        'originalContentUrl' => 'https://i.imgur.com/oo23A7r.jpg',
-                                        'previewImageUrl' => 'https://i.imgur.com/oo23A7r.jpg'
+                                        'originalContentUrl' => 'https://i.imgur.com/FS9aV5g.jpg',
+                                        'previewImageUrl' => 'https://i.imgur.com/FS9aV5g.jpg'
                                     )
                                 )
                                 ));                               
