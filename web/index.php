@@ -31,14 +31,14 @@ foreach ($client->parseEvents() as $event) {
             switch ($message['type']) {
                 case 'text':
                 	$m_message = $message['text'];
-                	if($m_message!="")
+                	if($m_message=="測試")
                 	{
                 		$client->replyMessage(array(
                         'replyToken' => $event['replyToken'],
                         'messages' => array(
                             array(
                                 'type' => 'text',
-                                'text' => $m_message
+                                'text' => 耶
                             )
                         )
                     	));
