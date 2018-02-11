@@ -26,7 +26,7 @@ $channelSecret = getenv('LINE_CHANNEL_SECRET');
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 $img_idx_buff = array();
 $array_idx = 0;
-$max_img = 9;
+$max_img = 16;
 foreach ($client->parseEvents() as $event) {
     switch ($event['type']) {
         case 'message':
@@ -194,7 +194,111 @@ foreach ($client->parseEvents() as $event) {
 								break;   																
 
 
+						//image 10
+						case 10: 
+								$client->replyMessage(array(
+								'replyToken' => $event['replyToken'],
+								'messages' => array(
+										array(
+												'type' => 'image',
+												'originalContentUrl' => 'https://i.imgur.com/GM3DFvr.jpg',
+												'previewImageUrl' => 'https://i.imgur.com/GM3DFvr.jpg'
+										)
+								)
+								));                               
+								break;   										
 
+
+						//image 11
+						case 11: 
+								$client->replyMessage(array(
+								'replyToken' => $event['replyToken'],
+								'messages' => array(
+										array(
+												'type' => 'image',
+												'originalContentUrl' => 'https://i.imgur.com/e9A0ecY.jpg',
+												'previewImageUrl' => 'https://i.imgur.com/e9A0ecY.jpg'
+										)
+								)
+								));                               
+								break;   											
+
+
+						//image 12
+						case 12: 
+								$client->replyMessage(array(
+								'replyToken' => $event['replyToken'],
+								'messages' => array(
+										array(
+												'type' => 'image',
+												'originalContentUrl' => 'https://i.imgur.com/XuzKnvA.jpg',
+												'previewImageUrl' => 'https://i.imgur.com/XuzKnvA.jpg'
+										)
+								)
+								));                               
+								break;   											
+
+
+						//image 13
+						case 13: 
+								$client->replyMessage(array(
+								'replyToken' => $event['replyToken'],
+								'messages' => array(
+										array(
+												'type' => 'image',
+												'originalContentUrl' => 'https://i.imgur.com/IXiJvCo.jpg',
+												'previewImageUrl' => 'https://i.imgur.com/IXiJvCo.jpg'
+										)
+								)
+								));                               
+								break;   			
+
+
+						//image 14
+						case 14: 
+								$client->replyMessage(array(
+								'replyToken' => $event['replyToken'],
+								'messages' => array(
+										array(
+												'type' => 'image',
+												'originalContentUrl' => 'https://i.imgur.com/YLizXUA.jpg',
+												'previewImageUrl' => 'https://i.imgur.com/YLizXUA.jpg'
+										)
+								)
+								));                               
+								break;   			
+
+
+
+						//image 15
+						case 15: 
+								$client->replyMessage(array(
+								'replyToken' => $event['replyToken'],
+								'messages' => array(
+										array(
+												'type' => 'image',
+												'originalContentUrl' => 'https://i.imgur.com/FKQgbiq.jpg',
+												'previewImageUrl' => 'https://i.imgur.com/FKQgbiq.jpg'
+										)
+								)
+								));                               
+								break;   			
+
+
+
+						//image 16
+						case 16: 
+								$client->replyMessage(array(
+								'replyToken' => $event['replyToken'],
+								'messages' => array(
+										array(
+												'type' => 'image',
+												'originalContentUrl' => 'https://i.imgur.com/Dz8jY4P.jpg',
+												'previewImageUrl' => 'https://i.imgur.com/Dz8jY4P.jpg'
+										)
+								)
+								));                               
+								break;   											
 					}
 												
 												
