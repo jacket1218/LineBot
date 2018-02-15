@@ -301,7 +301,8 @@ foreach ($client->parseEvents() as $event) {
 													));                               
 													break;   											
 										}				
-									}else if($m_message=='新年快樂'){
+									}
+									else if($m_message=='新年快樂'){
 										$client->replyMessage(array(
 										'replyToken' => $event['replyToken'],
 										'messages' => array(
@@ -379,10 +380,11 @@ foreach ($client->parseEvents() as $event) {
 														'previewImageUrl' => 'https://i.imgur.com/y9x50SI.jpg'
 												)
 										)
-										));   																									
+										)); 
+*/										
 									}
-*/												
-												
+								
+																
 												
 
 						}
