@@ -310,26 +310,26 @@ foreach ($client->parseEvents() as $event) {
 														'type' => 'image',
 														'originalContentUrl' => 'https://i.imgur.com/RwVHccA.jpg',
 														'previewImageUrl' => 'https://i.imgur.com/RwVHccA.jpg'
-												)
-												/*
+												),
+												
 												array(
 														'type' => 'image',
 														'originalContentUrl' => 'https://i.imgur.com/7mSydTz.jpg',
 														'previewImageUrl' => 'https://i.imgur.com/7mSydTz.jpg'
-												)
+												),
 
 												array(
 														'type' => 'image',
 														'originalContentUrl' => 'https://i.imgur.com/26rrmsf.jpg',
 														'previewImageUrl' => 'https://i.imgur.com/26rrmsf.jpg'
-												)
+												),
 
 												array(
 														'type' => 'image',
 														'originalContentUrl' => 'https://i.imgur.com/y9x50SI.jpg',
 														'previewImageUrl' => 'https://i.imgur.com/y9x50SI.jpg'
 												)		
-												*/
+												
 										)
 										));   									
 				
