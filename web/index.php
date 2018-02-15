@@ -326,12 +326,6 @@ foreach ($client->parseEvents() as $event) {
 
 												array(
 														'type' => 'image',
-														'originalContentUrl' => 'https://i.imgur.com/26rrmsf.jpg',
-														'previewImageUrl' => 'https://i.imgur.com/26rrmsf.jpg'
-												)
-
-												array(
-														'type' => 'image',
 														'originalContentUrl' => 'https://i.imgur.com/y9x50SI.jpg',
 														'previewImageUrl' => 'https://i.imgur.com/y9x50SI.jpg'
 												)												
