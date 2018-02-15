@@ -301,6 +301,50 @@ foreach ($client->parseEvents() as $event) {
 													));                               
 													break;   											
 										}				
+									}else if($m_message=='新年快樂'){
+										$client->replyMessage(array(
+										'replyToken' => $event['replyToken'],
+										'messages' => array(
+												array(
+														'type' => 'image',
+														'originalContentUrl' => 'https://i.imgur.com/RwVHccA.jpg',
+														'previewImageUrl' => 'https://i.imgur.com/RwVHccA.jpg'
+												)
+										)
+										));   
+										
+										$client->replyMessage(array(
+										'replyToken' => $event['replyToken'],
+										'messages' => array(
+												array(
+														'type' => 'image',
+														'originalContentUrl' => 'https://i.imgur.com/7mSydTz.jpg',
+														'previewImageUrl' => 'https://i.imgur.com/7mSydTz.jpg'
+												)
+										)
+										));   
+
+										$client->replyMessage(array(
+										'replyToken' => $event['replyToken'],
+										'messages' => array(
+												array(
+														'type' => 'image',
+														'originalContentUrl' => 'https://i.imgur.com/26rrmsf.jpg',
+														'previewImageUrl' => 'https://i.imgur.com/26rrmsf.jpg'
+												)
+										)
+										));   
+
+										$client->replyMessage(array(
+										'replyToken' => $event['replyToken'],
+										'messages' => array(
+												array(
+														'type' => 'image',
+														'originalContentUrl' => 'https://i.imgur.com/y9x50SI.jpg',
+														'previewImageUrl' => 'https://i.imgur.com/y9x50SI.jpg'
+												)
+										)
+										));   																									
 									}
 												
 												
