@@ -309,6 +309,19 @@ foreach ($client->parseEvents() as $event) {
 														'type' => 'image',
 														'originalContentUrl' => 'https://i.imgur.com/RwVHccA.jpg',
 														'previewImageUrl' => 'https://i.imgur.com/RwVHccA.jpg'
+														'originalContentUrl' => 'https://i.imgur.com/7mSydTz.jpg',
+														'previewImageUrl' => 'https://i.imgur.com/7mSydTz.jpg'
+												)
+										)
+										));   									
+/*									
+										$client->replyMessage(array(
+										'replyToken' => $event['replyToken'],
+										'messages' => array(
+												array(
+														'type' => 'image',
+														'originalContentUrl' => 'https://i.imgur.com/RwVHccA.jpg',
+														'previewImageUrl' => 'https://i.imgur.com/RwVHccA.jpg'
 												)
 										)
 										));   
@@ -346,7 +359,7 @@ foreach ($client->parseEvents() as $event) {
 										)
 										));   																									
 									}
-												
+*/												
 												
 												
 
