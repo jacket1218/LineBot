@@ -302,7 +302,7 @@ foreach ($client->parseEvents() as $event) {
 													break;   											
 										}				
 									}
-									else if($m_message=='新年快樂'){
+									if($m_message=='新年快樂'){
 										$client->replyMessage(array(
 										'replyToken' => $event['replyToken'],
 										'messages' => array(
@@ -333,7 +333,7 @@ foreach ($client->parseEvents() as $event) {
 										));   									
 				
 									}
-								break;
+							break;	
 						}
           break; 
         default:
