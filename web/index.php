@@ -36,315 +36,270 @@ foreach ($client->parseEvents() as $event) {
                 	$m_message = $message['text'];
                 	if($m_message=='抽卡')
                 	{
-									
-                    $img_idx = rand(0,$max_img);
-										if($array_idx!=0){							
-											while($array_idx[$array_idx]==$img_idx){
-												$img_idx = rand(0,$max_img);
-											}
-											$array_idx[$array_idx++] = $img_idx;
-											if($array_idx>$max_img)$array_idx = 0;
-										}else{
-											$array_idx[$array_idx++] = $img_idx;
-										}
-										
-																switch($img_idx){
-										//image 0  
-										case 0:
-										$client->replyMessage(array(
-										'replyToken' => $event['replyToken'],
-										'messages' => array(
-											array(
-											'type' => 'image',
-											'originalContentUrl' => 'https://i.imgur.com/oo23A7r.jpg',
-											'previewImageUrl' => 'https://i.imgur.com/oo23A7r.jpg'
-											)
+                        $img_idx = rand(0,$max_img);
+						if($array_idx!=0){							
+							while($array_idx[$array_idx]==$img_idx){
+								$img_idx = rand(0,$max_img);
+							}
+							$array_idx[$array_idx++] = $img_idx;
+							if($array_idx>$max_img)$array_idx = 0;
+						}else{
+							$array_idx[$array_idx++] = $img_idx;
+						}
+						
+                        switch($img_idx){
+						//image 0  
+						case 0:
+						$client->replyMessage(array(
+						'replyToken' => $event['replyToken'],
+						'messages' => array(
+							array(
+							'type' => 'image',
+							'originalContentUrl' => 'https://i.imgur.com/oo23A7r.jpg',
+							'previewImageUrl' => 'https://i.imgur.com/oo23A7r.jpg'
+							)
+						)
+						));                               
+						break;                               
+
+						//image 1   
+						case 1: 
+						$client->replyMessage(array(
+						'replyToken' => $event['replyToken'],
+						'messages' => array(
+							array(
+							'type' => 'image',
+							'originalContentUrl' => 'https://i.imgur.com/oo23A7r.jpg',
+							'previewImageUrl' => 'https://i.imgur.com/oo23A7r.jpg'
+							)
+						)
+						));                               
+						break;                                
+
+
+						//image 2 
+						case 2: 
+						$client->replyMessage(array(
+						'replyToken' => $event['replyToken'],
+						'messages' => array(
+							array(
+							'type' => 'image',
+							'originalContentUrl' => 'https://i.imgur.com/BZ47MW2.png',
+							'previewImageUrl' => 'https://i.imgur.com/BZ47MW2.png'
+							)
+						)
+						));                               
+						break;      
+
+
+						//image 3
+						case 3: 
+								$client->replyMessage(array(
+								'replyToken' => $event['replyToken'],
+								'messages' => array(
+										array(
+												'type' => 'image',
+												'originalContentUrl' => 'https://i.imgur.com/p4gxlz6.jpg',
+												'previewImageUrl' => 'https://i.imgur.com/p4gxlz6.jpg'
 										)
-										));                               
-										break;                               
+								)
+								));                               
+								break;      
 
-										//image 1   
-										case 1: 
-										$client->replyMessage(array(
-										'replyToken' => $event['replyToken'],
-										'messages' => array(
-											array(
-											'type' => 'image',
-											'originalContentUrl' => 'https://i.imgur.com/oo23A7r.jpg',
-											'previewImageUrl' => 'https://i.imgur.com/oo23A7r.jpg'
-											)
+						//image 4
+						case 4: 
+								$client->replyMessage(array(
+								'replyToken' => $event['replyToken'],
+								'messages' => array(
+										array(
+												'type' => 'image',
+												'originalContentUrl' => 'https://i.imgur.com/MrOMxZd.jpg',
+												'previewImageUrl' => 'https://i.imgur.com/MrOMxZd.jpg'
 										)
-										));                               
-										break;                                
+								)
+								));                               
+								break;   
 
-
-										//image 2 
-										case 2: 
-										$client->replyMessage(array(
-										'replyToken' => $event['replyToken'],
-										'messages' => array(
-											array(
-											'type' => 'image',
-											'originalContentUrl' => 'https://i.imgur.com/BZ47MW2.png',
-											'previewImageUrl' => 'https://i.imgur.com/BZ47MW2.png'
-											)
+						//image 5
+						case 5: 
+								$client->replyMessage(array(
+								'replyToken' => $event['replyToken'],
+								'messages' => array(
+										array(
+												'type' => 'image',
+												'originalContentUrl' => 'https://i.imgur.com/ZmPEJia.jpg',
+												'previewImageUrl' => 'https://i.imgur.com/ZmPEJia.jpg'
 										)
-										));                               
-										break;      
+								)
+								));                               
+								break;   
+
+						//image 6
+						case 6: 
+								$client->replyMessage(array(
+								'replyToken' => $event['replyToken'],
+								'messages' => array(
+										array(
+												'type' => 'image',
+												'originalContentUrl' => 'https://i.imgur.com/sXTWD1D.jpg',
+												'previewImageUrl' => 'https://i.imgur.com/sXTWD1D.jpg'
+										)
+								)
+								));                               
+								break;   
 
 
-										//image 3
-										case 3: 
-												$client->replyMessage(array(
-												'replyToken' => $event['replyToken'],
-												'messages' => array(
-														array(
-																'type' => 'image',
-																'originalContentUrl' => 'https://i.imgur.com/p4gxlz6.jpg',
-																'previewImageUrl' => 'https://i.imgur.com/p4gxlz6.jpg'
-														)
-												)
-												));                               
-												break;      
+						//image 7
+						case 7: 
+								$client->replyMessage(array(
+								'replyToken' => $event['replyToken'],
+								'messages' => array(
+										array(
+												'type' => 'image',
+												'originalContentUrl' => 'https://i.imgur.com/dvMHK2Z.jpg',
+												'previewImageUrl' => 'https://i.imgur.com/dvMHK2Z.jpg'
+										)
+								)
+								));                               
+								break;   															
 
-										//image 4
-										case 4: 
-												$client->replyMessage(array(
-												'replyToken' => $event['replyToken'],
-												'messages' => array(
-														array(
-																'type' => 'image',
-																'originalContentUrl' => 'https://i.imgur.com/MrOMxZd.jpg',
-																'previewImageUrl' => 'https://i.imgur.com/MrOMxZd.jpg'
-														)
-												)
-												));                               
-												break;   
-
-										//image 5
-										case 5: 
-												$client->replyMessage(array(
-												'replyToken' => $event['replyToken'],
-												'messages' => array(
-														array(
-																'type' => 'image',
-																'originalContentUrl' => 'https://i.imgur.com/ZmPEJia.jpg',
-																'previewImageUrl' => 'https://i.imgur.com/ZmPEJia.jpg'
-														)
-												)
-												));                               
-												break;   
-
-										//image 6
-										case 6: 
-												$client->replyMessage(array(
-												'replyToken' => $event['replyToken'],
-												'messages' => array(
-														array(
-																'type' => 'image',
-																'originalContentUrl' => 'https://i.imgur.com/sXTWD1D.jpg',
-																'previewImageUrl' => 'https://i.imgur.com/sXTWD1D.jpg'
-														)
-												)
-												));                               
-												break;   
+	
+						//image 8
+						case 8: 
+								$client->replyMessage(array(
+								'replyToken' => $event['replyToken'],
+								'messages' => array(
+										array(
+												'type' => 'image',
+												'originalContentUrl' => 'https://i.imgur.com/9oF5lVB.jpg',
+												'previewImageUrl' => 'https://i.imgur.com/9oF5lVB.jpg'
+										)
+								)
+								));                               
+								break;   
 
 
-										//image 7
-										case 7: 
-												$client->replyMessage(array(
-												'replyToken' => $event['replyToken'],
-												'messages' => array(
-														array(
-																'type' => 'image',
-																'originalContentUrl' => 'https://i.imgur.com/dvMHK2Z.jpg',
-																'previewImageUrl' => 'https://i.imgur.com/dvMHK2Z.jpg'
-														)
-												)
-												));                               
-												break;   															
-
-					
-										//image 8
-										case 8: 
-												$client->replyMessage(array(
-												'replyToken' => $event['replyToken'],
-												'messages' => array(
-														array(
-																'type' => 'image',
-																'originalContentUrl' => 'https://i.imgur.com/9oF5lVB.jpg',
-																'previewImageUrl' => 'https://i.imgur.com/9oF5lVB.jpg'
-														)
-												)
-												));                               
-												break;   
+						//image 9
+						case 9: 
+								$client->replyMessage(array(
+								'replyToken' => $event['replyToken'],
+								'messages' => array(
+										array(
+												'type' => 'image',
+												'originalContentUrl' => 'https://i.imgur.com/HmoemNf.jpg',
+												'previewImageUrl' => 'https://i.imgur.com/HmoemNf.jpg'
+										)
+								)
+								));                               
+								break;   																
 
 
-										//image 9
-										case 9: 
-												$client->replyMessage(array(
-												'replyToken' => $event['replyToken'],
-												'messages' => array(
-														array(
-																'type' => 'image',
-																'originalContentUrl' => 'https://i.imgur.com/HmoemNf.jpg',
-																'previewImageUrl' => 'https://i.imgur.com/HmoemNf.jpg'
-														)
-												)
-												));                               
-												break;   																
+						//image 10
+						case 10: 
+								$client->replyMessage(array(
+								'replyToken' => $event['replyToken'],
+								'messages' => array(
+										array(
+												'type' => 'image',
+												'originalContentUrl' => 'https://i.imgur.com/GM3DFvr.jpg',
+												'previewImageUrl' => 'https://i.imgur.com/GM3DFvr.jpg'
+										)
+								)
+								));                               
+								break;   										
 
 
-										//image 10
-										case 10: 
-												$client->replyMessage(array(
-												'replyToken' => $event['replyToken'],
-												'messages' => array(
-														array(
-																'type' => 'image',
-																'originalContentUrl' => 'https://i.imgur.com/GM3DFvr.jpg',
-																'previewImageUrl' => 'https://i.imgur.com/GM3DFvr.jpg'
-														)
-												)
-												));                               
-												break;   										
+						//image 11
+						case 11: 
+								$client->replyMessage(array(
+								'replyToken' => $event['replyToken'],
+								'messages' => array(
+										array(
+												'type' => 'image',
+												'originalContentUrl' => 'https://i.imgur.com/e9A0ecY.jpg',
+												'previewImageUrl' => 'https://i.imgur.com/e9A0ecY.jpg'
+										)
+								)
+								));                               
+								break;   											
 
 
-										//image 11
-										case 11: 
-												$client->replyMessage(array(
-												'replyToken' => $event['replyToken'],
-												'messages' => array(
-														array(
-																'type' => 'image',
-																'originalContentUrl' => 'https://i.imgur.com/e9A0ecY.jpg',
-																'previewImageUrl' => 'https://i.imgur.com/e9A0ecY.jpg'
-														)
-												)
-												));                               
-												break;   											
+						//image 12
+						case 12: 
+								$client->replyMessage(array(
+								'replyToken' => $event['replyToken'],
+								'messages' => array(
+										array(
+												'type' => 'image',
+												'originalContentUrl' => 'https://i.imgur.com/XuzKnvA.jpg',
+												'previewImageUrl' => 'https://i.imgur.com/XuzKnvA.jpg'
+										)
+								)
+								));                               
+								break;   											
 
 
-										//image 12
-										case 12: 
-												$client->replyMessage(array(
-												'replyToken' => $event['replyToken'],
-												'messages' => array(
-														array(
-																'type' => 'image',
-																'originalContentUrl' => 'https://i.imgur.com/XuzKnvA.jpg',
-																'previewImageUrl' => 'https://i.imgur.com/XuzKnvA.jpg'
-														)
-												)
-												));                               
-												break;   											
+						//image 13
+						case 13: 
+								$client->replyMessage(array(
+								'replyToken' => $event['replyToken'],
+								'messages' => array(
+										array(
+												'type' => 'image',
+												'originalContentUrl' => 'https://i.imgur.com/IXiJvCo.jpg',
+												'previewImageUrl' => 'https://i.imgur.com/IXiJvCo.jpg'
+										)
+								)
+								));                               
+								break;   			
 
 
-										//image 13
-										case 13: 
-												$client->replyMessage(array(
-												'replyToken' => $event['replyToken'],
-												'messages' => array(
-														array(
-																'type' => 'image',
-																'originalContentUrl' => 'https://i.imgur.com/IXiJvCo.jpg',
-																'previewImageUrl' => 'https://i.imgur.com/IXiJvCo.jpg'
-														)
-												)
-												));                               
-												break;   			
-
-
-										//image 14
-										case 14: 
-												$client->replyMessage(array(
-												'replyToken' => $event['replyToken'],
-												'messages' => array(
-														array(
-																'type' => 'image',
-																'originalContentUrl' => 'https://i.imgur.com/YLizXUA.jpg',
-																'previewImageUrl' => 'https://i.imgur.com/YLizXUA.jpg'
-														)
-												)
-												));                               
-												break;   			
+						//image 14
+						case 14: 
+								$client->replyMessage(array(
+								'replyToken' => $event['replyToken'],
+								'messages' => array(
+										array(
+												'type' => 'image',
+												'originalContentUrl' => 'https://i.imgur.com/YLizXUA.jpg',
+												'previewImageUrl' => 'https://i.imgur.com/YLizXUA.jpg'
+										)
+								)
+								));                               
+								break;   			
 
 
 
-										//image 15
-										case 15: 
-												$client->replyMessage(array(
-												'replyToken' => $event['replyToken'],
-												'messages' => array(
-														array(
-																'type' => 'image',
-																'originalContentUrl' => 'https://i.imgur.com/FKQgbiq.jpg',
-																'previewImageUrl' => 'https://i.imgur.com/FKQgbiq.jpg'
-														)
-												)
-												));                               
-												break;   			
+						//image 15
+						case 15: 
+								$client->replyMessage(array(
+								'replyToken' => $event['replyToken'],
+								'messages' => array(
+										array(
+												'type' => 'image',
+												'originalContentUrl' => 'https://i.imgur.com/FKQgbiq.jpg',
+												'previewImageUrl' => 'https://i.imgur.com/FKQgbiq.jpg'
+										)
+								)
+								));                               
+								break;   			
 
 
 
-										//image 16
-										case 16: 
-												$client->replyMessage(array(
-												'replyToken' => $event['replyToken'],
-												'messages' => array(
-														array(
-																'type' => 'image',
-																'originalContentUrl' => 'https://i.imgur.com/Dz8jY4P.jpg',
-																'previewImageUrl' => 'https://i.imgur.com/Dz8jY4P.jpg'
-														)
-												)
-												));                               
-												break;   											
-									}else if($m_message=='新年快樂'){
-												$client->replyMessage(array(
-												'replyToken' => $event['replyToken'],
-												'messages' => array(
-														array(
-																'type' => 'image',
-																'originalContentUrl' => 'https://i.imgur.com/RwVHccA.jpg',
-																'previewImageUrl' => 'https://i.imgur.com/RwVHccA.jpg'
-														)
-												)
-												));   
-												
-												$client->replyMessage(array(
-												'replyToken' => $event['replyToken'],
-												'messages' => array(
-														array(
-																'type' => 'image',
-																'originalContentUrl' => 'https://i.imgur.com/7mSydTz.jpg',
-																'previewImageUrl' => 'https://i.imgur.com/7mSydTz.jpg'
-														)
-												)
-												));   
-
-												$client->replyMessage(array(
-												'replyToken' => $event['replyToken'],
-												'messages' => array(
-														array(
-																'type' => 'image',
-																'originalContentUrl' => 'https://i.imgur.com/26rrmsf.jpg',
-																'previewImageUrl' => 'https://i.imgur.com/26rrmsf.jpg'
-														)
-												)
-												));   
-
-												$client->replyMessage(array(
-												'replyToken' => $event['replyToken'],
-												'messages' => array(
-														array(
-																'type' => 'image',
-																'originalContentUrl' => 'https://i.imgur.com/y9x50SI.jpg',
-																'previewImageUrl' => 'https://i.imgur.com/y9x50SI.jpg'
-														)
-												)
-												));   																			
-									}
+						//image 16
+						case 16: 
+								$client->replyMessage(array(
+								'replyToken' => $event['replyToken'],
+								'messages' => array(
+										array(
+												'type' => 'image',
+												'originalContentUrl' => 'https://i.imgur.com/Dz8jY4P.jpg',
+												'previewImageUrl' => 'https://i.imgur.com/Dz8jY4P.jpg'
+										)
+								)
+								));                               
+								break;   											
+					}
 												
 												
 												
