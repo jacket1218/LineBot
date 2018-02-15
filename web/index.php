@@ -331,61 +331,11 @@ foreach ($client->parseEvents() as $event) {
 												)												
 										)
 										));   									
-/*									
-										$client->replyMessage(array(
-										'replyToken' => $event['replyToken'],
-										'messages' => array(
-												array(
-														'type' => 'image',
-														'originalContentUrl' => 'https://i.imgur.com/RwVHccA.jpg',
-														'previewImageUrl' => 'https://i.imgur.com/RwVHccA.jpg'
-												)
-										)
-										));   
-										
-										$client->replyMessage(array(
-										'replyToken' => $event['replyToken'],
-										'messages' => array(
-												array(
-														'type' => 'image',
-														'originalContentUrl' => 'https://i.imgur.com/7mSydTz.jpg',
-														'previewImageUrl' => 'https://i.imgur.com/7mSydTz.jpg'
-												)
-										)
-										));   
-
-										$client->replyMessage(array(
-										'replyToken' => $event['replyToken'],
-										'messages' => array(
-												array(
-														'type' => 'image',
-														'originalContentUrl' => 'https://i.imgur.com/26rrmsf.jpg',
-														'previewImageUrl' => 'https://i.imgur.com/26rrmsf.jpg'
-												)
-										)
-										));   
-
-										$client->replyMessage(array(
-										'replyToken' => $event['replyToken'],
-										'messages' => array(
-												array(
-														'type' => 'image',
-														'originalContentUrl' => 'https://i.imgur.com/y9x50SI.jpg',
-														'previewImageUrl' => 'https://i.imgur.com/y9x50SI.jpg'
-												)
-										)
-										)); 
-*/										
+				
 									}
-								
-																
-												
-
+								break;
 						}
-                break;
-                
-   
-            break;
+           
         default:
             error_log("Unsupporeted event type: " . $event['type']);
             break;
