@@ -26,7 +26,7 @@ $channelSecret = getenv('LINE_CHANNEL_SECRET');
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 $img_idx_buff = array();
 $array_idx = 0;
-$max_img = 16;
+$max_img = 24;
 foreach ($client->parseEvents() as $event) {
     switch ($event['type']) {
         case 'message':
@@ -299,8 +299,143 @@ foreach ($client->parseEvents() as $event) {
 															)
 													)
 													));                               
-													break;   											
-										}				
+													break;   	
+
+
+
+											//image 17
+											case 17: 
+													$client->replyMessage(array(
+													'replyToken' => $event['replyToken'],
+													'messages' => array(
+															array(
+																	'type' => 'image',
+																	'originalContentUrl' => 'https://i.imgur.com/9DcSN9T.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/9DcSN9T.jpg'
+															)
+													)
+													));                               
+													break;  
+
+
+
+											//image 18
+											case 18: 
+													$client->replyMessage(array(
+													'replyToken' => $event['replyToken'],
+													'messages' => array(
+															array(
+																	'type' => 'image',
+																	'originalContentUrl' => 'https://i.imgur.com/8r1c4eY.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/8r1c4eY.jpg'
+															)
+													)
+													));                               
+													break;  
+
+
+
+											//image 19
+											case 19: 
+													$client->replyMessage(array(
+													'replyToken' => $event['replyToken'],
+													'messages' => array(
+															array(
+																	'type' => 'image',
+																	'originalContentUrl' => 'https://i.imgur.com/k8bFiNA.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/k8bFiNA.jpg'
+															)
+													)
+													));                               
+													break;  
+
+
+
+											//image 20
+											case 20: 
+													$client->replyMessage(array(
+													'replyToken' => $event['replyToken'],
+													'messages' => array(
+															array(
+																	'type' => 'image',
+																	'originalContentUrl' => 'https://i.imgur.com/0oixblM.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/0oixblM.jpg'
+															)
+													)
+													));                               
+													break;  
+
+
+
+											//image 21
+											case 21: 
+													$client->replyMessage(array(
+													'replyToken' => $event['replyToken'],
+													'messages' => array(
+															array(
+																	'type' => 'image',
+																	'originalContentUrl' => 'https://i.imgur.com/B3Ma0SM.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/B3Ma0SM.jpg'
+															)
+													)
+													));                               
+													break;  
+
+
+
+											//image 22
+											case 22: 
+													$client->replyMessage(array(
+													'replyToken' => $event['replyToken'],
+													'messages' => array(
+															array(
+																	'type' => 'image',
+																	'originalContentUrl' => 'https://i.imgur.com/tZZruIA.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/tZZruIA.jpg'
+															)
+													)
+													));                               
+													break;  
+
+
+
+											//image 23
+											case 23: 
+													$client->replyMessage(array(
+													'replyToken' => $event['replyToken'],
+													'messages' => array(
+															array(
+																	'type' => 'image',
+																	'originalContentUrl' => 'https://i.imgur.com/5xxAUgC.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/5xxAUgC.jpg'
+															)
+													)
+													));                               
+													break;  
+													
+											//image 24
+											case 24: 
+													$client->replyMessage(array(
+													'replyToken' => $event['replyToken'],
+													'messages' => array(
+															array(
+																	'type' => 'image',
+																	'originalContentUrl' => 'https://i.imgur.com/v3Qq8qa.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/v3Qq8qa.jpg'
+															)
+													)
+													));                               
+													break; 													
+													
+													
+										}//switch($img_idx)	
+
+
+
+
+
+
+										
 									}
 									elseif($m_message=='新年快樂'){
 										$client->replyMessage(array(
