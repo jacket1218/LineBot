@@ -27,7 +27,6 @@ $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 $img_idx_buff = array();
 $array_idx = 0;
 $max_img = 24;
-$total_value = 0;
 foreach ($client->parseEvents() as $event) {
     switch ($event['type']) {
         case 'message':
@@ -37,17 +36,8 @@ foreach ($client->parseEvents() as $event) {
                 	$m_message = $message['text'];
                 	if($m_message=='抽卡')
                 	{
-						/*
-						for($i=0;$i<10;$i++){
-							 $img_idx_temp = rand(0,$max_img);
-							 $total_value += $img_idx_temp;
-						}
-						$img_idx =total_value/10;
-　						*/
-
 									
-                   
-										img_idx = rand(0,$max_img);
+                    $img_idx = rand(0,$max_img);
 										if($array_idx!=0){							
 											while($array_idx[$array_idx]==$img_idx){
 												$img_idx = rand(0,$max_img);
