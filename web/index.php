@@ -37,16 +37,17 @@ foreach ($client->parseEvents() as $event) {
                 	$m_message = $message['text'];
                 	if($m_message=='抽卡')
                 	{
+						/*
 						for($i=0;$i<10;$i++){
 							 $img_idx_temp = rand(0,$max_img);
 							 $total_value += $img_idx_temp;
 						}
-						$img_idx =$total_value/10;
-　
+						$img_idx =total_value/10;
+　						*/
 
 									
                    
-										/*
+										img_idx = rand(0,$max_img);
 										if($array_idx!=0){							
 											while($array_idx[$array_idx]==$img_idx){
 												$img_idx = rand(0,$max_img);
@@ -56,7 +57,7 @@ foreach ($client->parseEvents() as $event) {
 										}else{
 											$array_idx[$array_idx++] = $img_idx;
 										}
-										*/
+										
 										switch($img_idx){
 											//image 0  
 											case 0:
