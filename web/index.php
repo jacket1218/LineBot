@@ -26,7 +26,7 @@ $channelSecret = getenv('LINE_CHANNEL_SECRET');
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 $img_idx_buff = array();
 $array_idx = 0;
-$max_img = 24;
+$max_img = 26;
 foreach ($client->parseEvents() as $event) {
     switch ($event['type']) {
         case 'message':
@@ -426,6 +426,34 @@ foreach ($client->parseEvents() as $event) {
 													)
 													));                               
 													break; 													
+
+											//image 25
+											case 25: 
+													$client->replyMessage(array(
+													'replyToken' => $event['replyToken'],
+													'messages' => array(
+															array(
+																	'type' => 'image',
+																	'originalContentUrl' => 'https://i.imgur.com/4GxzmAp.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/4GxzmAp.jpg'
+															)
+													)
+													));                               
+													break; 		
+													
+											//image 26
+											case 26: 
+													$client->replyMessage(array(
+													'replyToken' => $event['replyToken'],
+													'messages' => array(
+															array(
+																	'type' => 'image',
+																	'originalContentUrl' => 'https://i.imgur.com/GWrYhdb.png',
+																	'previewImageUrl' => 'https://i.imgur.com/GWrYhdb.png'
+															)
+													)
+													));                               
+													break; 															
 													
 													
 										}//switch($img_idx)	
