@@ -26,7 +26,7 @@ $channelSecret = getenv('LINE_CHANNEL_SECRET');
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 $img_idx_buff = array();
 $array_idx = 0;
-$max_img = 26;
+$max_img = 29;
 foreach ($client->parseEvents() as $event) {
     switch ($event['type']) {
         case 'message':
@@ -453,8 +453,49 @@ foreach ($client->parseEvents() as $event) {
 															)
 													)
 													));                               
+													break; 		
+
+											//image 27
+											case 27: 
+													$client->replyMessage(array(
+													'replyToken' => $event['replyToken'],
+													'messages' => array(
+															array(
+																	'type' => 'image',
+																	'originalContentUrl' => 'https://i.imgur.com/8moZLPd.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/8moZLPd.jpg'
+															)
+													)
+													));                               
 													break; 															
 													
+											//image 28
+											case 28: 
+													$client->replyMessage(array(
+													'replyToken' => $event['replyToken'],
+													'messages' => array(
+															array(
+																	'type' => 'image',
+																	'originalContentUrl' => 'https://i.imgur.com/sb3A1cN.png',
+																	'previewImageUrl' => 'https://i.imgur.com/sb3A1cN.png'
+															)
+													)
+													));                               
+													break; 		
+
+											//image 29
+											case 29: 
+													$client->replyMessage(array(
+													'replyToken' => $event['replyToken'],
+													'messages' => array(
+															array(
+																	'type' => 'image',
+																	'originalContentUrl' => 'https://i.imgur.com/lNm6xyR.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/lNm6xyR.jpg'
+															)
+													)
+													));                               
+													break; 		
 													
 										}//switch($img_idx)	
 
