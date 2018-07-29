@@ -49,7 +49,7 @@ foreach ($client->parseEvents() as $event) {
                 	{									  
 										$image_group = rand(0,100)% $MAX_GROUP;
 										//先亂數Group, 再抽哪張卡片								
-										switch(image_group){
+										switch($image_group){
 											//group 0
 											case 0:
 												$img_idx = rand(0,1000)% $GROUP_0;				
@@ -481,7 +481,7 @@ foreach ($client->parseEvents() as $event) {
 											//group 1
 											case 1:
 												$img_idx = rand(0,1000)% $GROUP_1;																
-												switch(img_idx){
+												switch($img_idx){
 													//image 0
 													case 0: 
 															$client->replyMessage(array(
