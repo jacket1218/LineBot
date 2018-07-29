@@ -29,7 +29,6 @@ $img_idx_buff = array();
 $array_idx = 0;
 $image_group = 0;
 
-$max_img = 40;
 $MAX_GROUP = 4;
 
 $GROUP_0 = 30;
