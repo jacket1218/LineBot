@@ -49,7 +49,7 @@ foreach ($client->parseEvents() as $event) {
                 	if($m_message=='抽卡')
                 	{									  
 										$image_group = rand(0,100)%MAX_GROUP;
-										
+										/*
 												$client->replyMessage(array(
 												'replyToken' => $event['replyToken'],
 												'messages' => array(
@@ -59,7 +59,7 @@ foreach ($client->parseEvents() as $event) {
 														)
 												)
 												));                               											
-										
+										*/
 							
 										//先亂數Group, 再抽哪張卡片								
 										switch(image_group){
