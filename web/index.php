@@ -47,8 +47,8 @@ foreach ($client->parseEvents() as $event) {
                 	$m_message = $message['text'];
                 	if($m_message=='抽卡')
                 	{									  
-										$image_group = rand(0,100)% $MAX_GROUP;
-										
+										//$image_group = rand(0,100)% $MAX_GROUP;
+										$image_group = 2;
 										//先亂數Group, 再抽哪張卡片								
 										switch(image_group){
 											//group 0
