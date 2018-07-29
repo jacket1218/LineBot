@@ -55,7 +55,7 @@ foreach ($client->parseEvents() as $event) {
 												'messages' => array(
 														array(
 																'type' => 'text',
-																"text" => $message->{"GRP:%d\r\n",$image_group};
+																"text" => $message->{("GRP:"+$image_group)};
 														)
 												)
 												));                               											
