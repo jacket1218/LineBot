@@ -47,12 +47,12 @@ foreach ($client->parseEvents() as $event) {
                 	$m_message = $message['text'];
                 	if($m_message=='抽卡')
                 	{									  
-										$image_group = rand(0,100)% $MAX_GROUP;
+										$image_group = rand(0,500)% $MAX_GROUP;
 										//先亂數Group, 再抽哪張卡片								
 										switch($image_group){
 											//group 0
 											case 0:
-												$img_idx = rand(0,1000)% $GROUP_0;				
+												$img_idx = rand(0,10000)% $GROUP_0;				
 												switch($img_idx){							
 													//image 0  
 													case 0:
@@ -480,7 +480,7 @@ foreach ($client->parseEvents() as $event) {
 											
 											//group 1
 											case 1:
-												$img_idx = rand(0,1000)% $GROUP_1;																
+												$img_idx = rand(0,10000)% $GROUP_1;																
 												switch($img_idx){
 													//image 0
 													case 0: 
@@ -910,7 +910,7 @@ foreach ($client->parseEvents() as $event) {
 											
 											//group 2
 											case 2:
-												$img_idx = rand(0,1000)% $GROUP_2;									
+												$img_idx = rand(0,10000)% $GROUP_2;									
 												switch($img_idx){							
 													//image 0  
 													case 0:
@@ -1340,7 +1340,7 @@ foreach ($client->parseEvents() as $event) {
 											
 											//group 3
 											case 3:
-												$img_idx = rand(0,1000)% $GROUP_3;									
+												$img_idx = rand(0,10000)% $GROUP_3;									
 												switch($img_idx){							
 													//image 0  
 													case 0:
@@ -1769,7 +1769,7 @@ foreach ($client->parseEvents() as $event) {
 
 											//group 4
 											case 4:
-												$img_idx = rand(0,1000)% $GROUP_4;									
+												$img_idx = rand(0,10000)% $GROUP_4;									
 												switch($img_idx){							
 													//image 0  
 													case 0:
@@ -2198,7 +2198,7 @@ foreach ($client->parseEvents() as $event) {
 /*											
 											//group 5
 											case 5:
-												$img_idx = rand(0,1000)% $GROUP_5;									
+												$img_idx = rand(0,10000)% $GROUP_5;									
 												switch($img_idx){							
 													//image 0  
 													case 0:
