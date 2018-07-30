@@ -56,7 +56,7 @@ foreach ($client->parseEvents() as $event) {
 										}
 										*/
 										//$image_group = (int)($group_count/10);
-										//$image_group = rand(0,500)% $MAX_GROUP;
+										$image_group = rand(0,500)% $MAX_GROUP;
 										
 										
 										//先亂數Group, 再抽哪張卡片								
