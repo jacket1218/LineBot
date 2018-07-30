@@ -38,7 +38,7 @@ $GROUP_0 = 30;
 $GROUP_1 = 30;
 $GROUP_2 = 30;
 $GROUP_3 = 30;
-$GROUP_4 = 4;
+$GROUP_4 = 5;
 
 
 foreach ($client->parseEvents() as $event) {
@@ -51,7 +51,7 @@ foreach ($client->parseEvents() as $event) {
                 	if($m_message=='抽卡')
                 	{	
 
-										for($i=0;$i<10;$i++ ){
+										for($i=0;$i<10;$i++){
 											$group_count += ((rand(0,500)% $MAX_GROUP);
 										}
 										$image_group = $group_count/10;
@@ -62,11 +62,13 @@ foreach ($client->parseEvents() as $event) {
 										switch($image_group){
 											//group 0
 											case 0:
-												for($i=0;$i<10;$i++ ){
+												/*
+												for($i=0;$i<10;$i++){
 													$idx_count += (rand(0,10000)% $GROUP_0);
 												}	
-												$img_idx = $idx_count/10;		
-												//$img_idx = rand(0,10000)% $GROUP_0;				
+												$img_idx = $idx_count/10;
+												*/		
+												$img_idx = rand(0,10000)% $GROUP_0;				
 												switch($img_idx){							
 													//image 0  
 													case 0:
@@ -494,11 +496,13 @@ foreach ($client->parseEvents() as $event) {
 											
 											//group 1
 											case 1:
-												for($i=0;$i<10;$i++ ){
+												/*
+												for($i=0;$i<10;$i++){
 													$idx_count += (rand(0,10000)% $GROUP_1);
 												}	
-												$img_idx = $idx_count/10;													
-												//$img_idx = rand(0,10000)% $GROUP_1;																
+												$img_idx = $idx_count/10;
+												*/		
+												$img_idx = rand(0,10000)% $GROUP_1;																
 												switch($img_idx){
 													//image 0
 													case 0: 
@@ -928,11 +932,13 @@ foreach ($client->parseEvents() as $event) {
 											
 											//group 2
 											case 2:
+												/*
 												for($i=0;$i<10;$i++ ){
 													$idx_count += (rand(0,10000)% $GROUP_2);
 												}	
-												$img_idx = $idx_count/10;													
-												//$img_idx = rand(0,10000)% $GROUP_2;									
+												$img_idx = $idx_count/10;
+												*/		
+												$img_idx = rand(0,10000)% $GROUP_2;									
 												switch($img_idx){							
 													//image 0  
 													case 0:
@@ -1362,11 +1368,13 @@ foreach ($client->parseEvents() as $event) {
 											
 											//group 3
 											case 3:
+												/*
 												for($i=0;$i<10;$i++ ){
 													$idx_count += (rand(0,10000)% $GROUP_3);
 												}	
-												$img_idx = $idx_count/10;													
-												//$img_idx = rand(0,10000)% $GROUP_3;									
+												$img_idx = $idx_count/10;	
+												*/		
+												$img_idx = rand(0,10000)% $GROUP_3;									
 												switch($img_idx){							
 													//image 0  
 													case 0:
@@ -1795,11 +1803,13 @@ foreach ($client->parseEvents() as $event) {
 
 											//group 4
 											case 4:
+												/*
 												for($i=0;$i<10;$i++ ){
 													$idx_count += (rand(0,10000)% $GROUP_4);
 												}	
-												$img_idx = $idx_count/10;													
-												//$img_idx = rand(0,10000)% $GROUP_4;									
+												$img_idx = $idx_count/10;
+												*/												
+												$img_idx = rand(0,10000)% $GROUP_4;									
 												switch($img_idx){							
 													//image 0  
 													case 0:
