@@ -52,7 +52,7 @@ foreach ($client->parseEvents() as $event) {
                 	{	
 
 										for($i=0;$i<10;$i++ ){
-											$group_count = $group_count + ((rand(0,500)% $MAX_GROUP);
+											$group_count += ((rand(0,500)% $MAX_GROUP);
 										}
 										$image_group = $group_count/10;
 										//$image_group = rand(0,500)% $MAX_GROUP;
@@ -63,7 +63,7 @@ foreach ($client->parseEvents() as $event) {
 											//group 0
 											case 0:
 												for($i=0;$i<10;$i++ ){
-													$idx_count = $idx_count + (rand(0,10000)% $GROUP_0);
+													$idx_count += (rand(0,10000)% $GROUP_0);
 												}	
 												$img_idx = $idx_count/10;		
 												//$img_idx = rand(0,10000)% $GROUP_0;				
@@ -495,7 +495,7 @@ foreach ($client->parseEvents() as $event) {
 											//group 1
 											case 1:
 												for($i=0;$i<10;$i++ ){
-													$idx_count = $idx_count + (rand(0,10000)% $GROUP_1);
+													$idx_count += (rand(0,10000)% $GROUP_1);
 												}	
 												$img_idx = $idx_count/10;													
 												//$img_idx = rand(0,10000)% $GROUP_1;																
@@ -929,7 +929,7 @@ foreach ($client->parseEvents() as $event) {
 											//group 2
 											case 2:
 												for($i=0;$i<10;$i++ ){
-													$idx_count = $idx_count + (rand(0,10000)% $GROUP_2);
+													$idx_count += (rand(0,10000)% $GROUP_2);
 												}	
 												$img_idx = $idx_count/10;													
 												//$img_idx = rand(0,10000)% $GROUP_2;									
@@ -1363,7 +1363,7 @@ foreach ($client->parseEvents() as $event) {
 											//group 3
 											case 3:
 												for($i=0;$i<10;$i++ ){
-													$idx_count = $idx_count + (rand(0,10000)% $GROUP_3);
+													$idx_count += (rand(0,10000)% $GROUP_3);
 												}	
 												$img_idx = $idx_count/10;													
 												//$img_idx = rand(0,10000)% $GROUP_3;									
@@ -1796,7 +1796,7 @@ foreach ($client->parseEvents() as $event) {
 											//group 4
 											case 4:
 												for($i=0;$i<10;$i++ ){
-													$idx_count = $idx_count + (rand(0,10000)% $GROUP_4);
+													$idx_count += (rand(0,10000)% $GROUP_4);
 												}	
 												$img_idx = $idx_count/10;													
 												//$img_idx = rand(0,10000)% $GROUP_4;									
@@ -2229,7 +2229,7 @@ foreach ($client->parseEvents() as $event) {
 											//group 5
 											case 5:
 												for($i=0;$i<10;$i++ ){
-													$idx_count = $idx_count + (rand(0,10000)% $GROUP_5);
+													$idx_count += (rand(0,10000)% $GROUP_5);
 												}	
 												$img_idx = $idx_count/10;													
 												//$img_idx = rand(0,10000)% $GROUP_5;									
