@@ -28,6 +28,9 @@ $img_idx_buff = array();
 
 $array_idx = 0;
 $image_group = 0;
+$group_count = 0;
+$idx_count = 0;
+$temp = 0;
 
 $MAX_GROUP = 5;
 
@@ -35,7 +38,7 @@ $GROUP_0 = 30;
 $GROUP_1 = 30;
 $GROUP_2 = 30;
 $GROUP_3 = 30;
-$GROUP_4 = 2;
+$GROUP_4 = 4;
 
 
 foreach ($client->parseEvents() as $event) {
@@ -46,13 +49,24 @@ foreach ($client->parseEvents() as $event) {
                 case 'text':
                 	$m_message = $message['text'];
                 	if($m_message=='抽卡')
-                	{									  
-										$image_group = rand(0,500)% $MAX_GROUP;
+                	{	
+
+										for($i=0;$i<10;$i++ ){
+											$group_count = $group_count + ((rand(0,500)% $MAX_GROUP);
+										}
+										$image_group = $group_count/10;
+										//$image_group = rand(0,500)% $MAX_GROUP;
+										
+										
 										//先亂數Group, 再抽哪張卡片								
 										switch($image_group){
 											//group 0
 											case 0:
-												$img_idx = rand(0,10000)% $GROUP_0;				
+												for($i=0;$i<10;$i++ ){
+													$idx_count = $idx_count + (rand(0,10000)% $GROUP_0);
+												}	
+												$img_idx = $idx_count/10;		
+												//$img_idx = rand(0,10000)% $GROUP_0;				
 												switch($img_idx){							
 													//image 0  
 													case 0:
@@ -480,7 +494,11 @@ foreach ($client->parseEvents() as $event) {
 											
 											//group 1
 											case 1:
-												$img_idx = rand(0,10000)% $GROUP_1;																
+												for($i=0;$i<10;$i++ ){
+													$idx_count = $idx_count + (rand(0,10000)% $GROUP_1);
+												}	
+												$img_idx = $idx_count/10;													
+												//$img_idx = rand(0,10000)% $GROUP_1;																
 												switch($img_idx){
 													//image 0
 													case 0: 
@@ -910,7 +928,11 @@ foreach ($client->parseEvents() as $event) {
 											
 											//group 2
 											case 2:
-												$img_idx = rand(0,10000)% $GROUP_2;									
+												for($i=0;$i<10;$i++ ){
+													$idx_count = $idx_count + (rand(0,10000)% $GROUP_2);
+												}	
+												$img_idx = $idx_count/10;													
+												//$img_idx = rand(0,10000)% $GROUP_2;									
 												switch($img_idx){							
 													//image 0  
 													case 0:
@@ -1340,7 +1362,11 @@ foreach ($client->parseEvents() as $event) {
 											
 											//group 3
 											case 3:
-												$img_idx = rand(0,10000)% $GROUP_3;									
+												for($i=0;$i<10;$i++ ){
+													$idx_count = $idx_count + (rand(0,10000)% $GROUP_3);
+												}	
+												$img_idx = $idx_count/10;													
+												//$img_idx = rand(0,10000)% $GROUP_3;									
 												switch($img_idx){							
 													//image 0  
 													case 0:
@@ -1587,8 +1613,8 @@ foreach ($client->parseEvents() as $event) {
 															'messages' => array(
 																array(
 																	'type' => 'image',
-																	'originalContentUrl' => 'https://i.imgur.com/juvvrKH.jpg',
-																	'previewImageUrl' => 'https://i.imgur.com/juvvrKH.jpg'
+																	'originalContentUrl' => 'https://i.imgur.com/08GgXnf.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/08GgXnf.jpg'
 																)
 															)
 															));                               
@@ -1769,7 +1795,11 @@ foreach ($client->parseEvents() as $event) {
 
 											//group 4
 											case 4:
-												$img_idx = rand(0,10000)% $GROUP_4;									
+												for($i=0;$i<10;$i++ ){
+													$idx_count = $idx_count + (rand(0,10000)% $GROUP_4);
+												}	
+												$img_idx = $idx_count/10;													
+												//$img_idx = rand(0,10000)% $GROUP_4;									
 												switch($img_idx){							
 													//image 0  
 													case 0:
@@ -1798,7 +1828,7 @@ foreach ($client->parseEvents() as $event) {
 															)
 															));                               
 													break;                                
-/*
+
 														//image 2 
 													case 2: 
 															$client->replyMessage(array(
@@ -1806,8 +1836,8 @@ foreach ($client->parseEvents() as $event) {
 															'messages' => array(
 																array(
 																	'type' => 'image',
-																	'originalContentUrl' => '',
-																	'previewImageUrl' => ''
+																	'originalContentUrl' => 'https://i.imgur.com/juvvrKH.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/juvvrKH.jpg'
 																)
 															)
 															));                               
@@ -1820,8 +1850,8 @@ foreach ($client->parseEvents() as $event) {
 															'messages' => array(
 																array(
 																	'type' => 'image',
-																	'originalContentUrl' => '',
-																	'previewImageUrl' => ''
+																	'originalContentUrl' => 'https://i.imgur.com/N3WKblD.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/N3WKblD.jpg'
 																)
 															)
 															));                               
@@ -1834,13 +1864,13 @@ foreach ($client->parseEvents() as $event) {
 															'messages' => array(
 																array(
 																	'type' => 'image',
-																	'originalContentUrl' => '',
-																	'previewImageUrl' => ''
+																	'originalContentUrl' => 'https://i.imgur.com/iqKK3e5.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/iqKK3e5.jpg'
 																)
 															)
 															));                               
 													break;   
-
+/*
 													//image 5
 													case 5: 
 															$client->replyMessage(array(
@@ -2198,7 +2228,11 @@ foreach ($client->parseEvents() as $event) {
 /*											
 											//group 5
 											case 5:
-												$img_idx = rand(0,10000)% $GROUP_5;									
+												for($i=0;$i<10;$i++ ){
+													$idx_count = $idx_count + (rand(0,10000)% $GROUP_5);
+												}	
+												$img_idx = $idx_count/10;													
+												//$img_idx = rand(0,10000)% $GROUP_5;									
 												switch($img_idx){							
 													//image 0  
 													case 0:
