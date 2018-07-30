@@ -54,7 +54,7 @@ foreach ($client->parseEvents() as $event) {
 										for($i=0;$i<10;$i++){
 											$group_count += ((rand(0,500)% $MAX_GROUP);
 										}
-										$image_group = floor($group_count/10);
+										//$image_group = (int)($group_count/10);
 										//$image_group = rand(0,500)% $MAX_GROUP;
 										
 										
