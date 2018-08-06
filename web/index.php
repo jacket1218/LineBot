@@ -38,7 +38,7 @@ $GROUP_0 = 30;
 $GROUP_1 = 30;
 $GROUP_2 = 30;
 $GROUP_3 = 30;
-$GROUP_4 = 5;
+$GROUP_4 = 18;
 
 
 foreach ($client->parseEvents() as $event) {
@@ -1594,8 +1594,8 @@ foreach ($client->parseEvents() as $event) {
 															'messages' => array(
 																array(
 																	'type' => 'image',
-																	'originalContentUrl' => 'https://i.imgur.com/CRNvInG.jpg',
-																	'previewImageUrl' => 'https://i.imgur.com/CRNvInG.jpg'
+																	'originalContentUrl' => 'https://i.imgur.com/PHAU4CD.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/PHAU4CD.jpg'
 																)
 															)
 															));                               
@@ -1608,8 +1608,8 @@ foreach ($client->parseEvents() as $event) {
 															'messages' => array(
 																array(
 																	'type' => 'image',
-																	'originalContentUrl' => 'https://i.imgur.com/p3dbfCf.jpg',
-																	'previewImageUrl' => 'https://i.imgur.com/p3dbfCf.jpg'
+																	'originalContentUrl' => 'https://i.imgur.com/LJoj54U.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/LJoj54U.jpg'
 																)
 															)
 															));                               
@@ -1881,7 +1881,7 @@ foreach ($client->parseEvents() as $event) {
 															)
 															));                               
 													break;   
-/*
+
 													//image 5
 													case 5: 
 															$client->replyMessage(array(
@@ -1889,8 +1889,8 @@ foreach ($client->parseEvents() as $event) {
 															'messages' => array(
 																array(
 																	'type' => 'image',
-																	'originalContentUrl' => '',
-																	'previewImageUrl' => ''
+																	'originalContentUrl' => 'https://i.imgur.com/lMTeuYq.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/lMTeuYq.jpg'
 																)
 															)
 															));                               
@@ -1903,8 +1903,8 @@ foreach ($client->parseEvents() as $event) {
 															'messages' => array(
 																array(
 																	'type' => 'image',
-																	'originalContentUrl' => '',
-																	'previewImageUrl' => ''
+																	'originalContentUrl' => 'https://i.imgur.com/l6cbDT2.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/l6cbDT2.jpg'
 																)
 															)
 															));                               
@@ -1917,8 +1917,8 @@ foreach ($client->parseEvents() as $event) {
 															'messages' => array(
 																array(
 																	'type' => 'image',
-																	'originalContentUrl' => '',
-																	'previewImageUrl' => ''
+																	'originalContentUrl' => 'https://i.imgur.com/ftc0eFZ.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/ftc0eFZ.jpg'
 																)
 															)
 															));                               
@@ -1931,8 +1931,8 @@ foreach ($client->parseEvents() as $event) {
 															'messages' => array(
 																array(
 																	'type' => 'image',
-																	'originalContentUrl' => '',
-																	'previewImageUrl' => ''
+																	'originalContentUrl' => 'https://i.imgur.com/qv32DPU.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/qv32DPU.jpg'
 																)
 															)
 															));                               
@@ -1945,8 +1945,8 @@ foreach ($client->parseEvents() as $event) {
 															'messages' => array(
 																array(
 																	'type' => 'image',
-																	'originalContentUrl' => '',
-																	'previewImageUrl' => ''
+																	'originalContentUrl' => 'https://i.imgur.com/Kcwuj8n.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/Kcwuj8n.jpg'
 																)
 															)
 															));                               
@@ -1959,8 +1959,8 @@ foreach ($client->parseEvents() as $event) {
 															'messages' => array(
 																array(
 																	'type' => 'image',
-																	'originalContentUrl' => '',
-																	'previewImageUrl' => ''
+																	'originalContentUrl' => 'https://i.imgur.com/IXyryVf.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/IXyryVf.jpg'
 																)
 															)
 															));                               
@@ -1973,8 +1973,8 @@ foreach ($client->parseEvents() as $event) {
 															'messages' => array(
 																array(
 																	'type' => 'image',
-																	'originalContentUrl' => '',
-																	'previewImageUrl' => ''
+																	'originalContentUrl' => 'https://i.imgur.com/ZHwAIZY.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/ZHwAIZY.jpg'
 																)
 															)
 															));                               
@@ -1987,8 +1987,8 @@ foreach ($client->parseEvents() as $event) {
 															'messages' => array(
 																array(
 																	'type' => 'image',
-																	'originalContentUrl' => '',
-																	'previewImageUrl' => ''
+																	'originalContentUrl' => 'https://i.imgur.com/RDgwFSn.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/RDgwFSn.jpg'
 																)
 															)
 															));                               
@@ -2001,8 +2001,8 @@ foreach ($client->parseEvents() as $event) {
 															'messages' => array(
 																array(
 																	'type' => 'image',
-																	'originalContentUrl' => '',
-																	'previewImageUrl' => ''
+																	'originalContentUrl' => 'https://i.imgur.com/y1PlJjS.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/y1PlJjS.jpg'
 																)
 															)
 															));                               
@@ -2015,8 +2015,8 @@ foreach ($client->parseEvents() as $event) {
 															'messages' => array(
 																array(
 																	'type' => 'image',
-																		'originalContentUrl' => '',
-																	'previewImageUrl' => ''
+																		'originalContentUrl' => 'https://i.imgur.com/bbdHiaK.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/bbdHiaK.jpg'
 																)
 															)
 															));                               
@@ -2029,8 +2029,8 @@ foreach ($client->parseEvents() as $event) {
 															'messages' => array(
 																array(
 																	'type' => 'image',
-																	'originalContentUrl' => '',
-																	'previewImageUrl' => ''
+																	'originalContentUrl' => 'https://i.imgur.com/yrgVaow.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/yrgVaow.jpg'
 																)
 															)
 															));                               
@@ -2043,8 +2043,8 @@ foreach ($client->parseEvents() as $event) {
 															'messages' => array(
 																array(
 																	'type' => 'image',
-																	'originalContentUrl' => '',
-																	'previewImageUrl' => ''
+																	'originalContentUrl' => 'https://i.imgur.com/Bjyrk34.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/Bjyrk34.jpg'
 																)
 															)
 															));                               
@@ -2057,8 +2057,8 @@ foreach ($client->parseEvents() as $event) {
 															'messages' => array(
 																array(
 																	'type' => 'image',
-																	'originalContentUrl' => '',
-																	'previewImageUrl' => ''
+																	'originalContentUrl' => 'https://i.imgur.com/FVkd18V.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/FVkd18V.jpg'
 																)
 															)
 															));                               
@@ -2071,13 +2071,13 @@ foreach ($client->parseEvents() as $event) {
 															'messages' => array(
 																array(
 																	'type' => 'image',
-																	'originalContentUrl' => '',
-																	'previewImageUrl' => ''
+																	'originalContentUrl' => 'https://i.imgur.com/tjA3r8p.jpg',
+																	'previewImageUrl' => 'https://i.imgur.com/tjA3r8p.jpg'
 																)
 															)
 															));                               
 													break;  
-
+/*
 													//image 19
 													case 19: 
 															$client->replyMessage(array(
